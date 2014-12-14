@@ -3,7 +3,7 @@ CFLAGS = -Wall -O0 -g
 LFLAGS = -O0 -g
 LIBS = -lm
 
-decodemessage:  caesar.o decodemessage.o
+decodemessage:  caesar.o decodemessage.o 
 	$(CC) $(LFLAGS) -o $@ $^ $(LIBS)
 
 clean:
