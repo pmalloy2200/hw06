@@ -22,7 +22,7 @@ caesar (int key, char message[])
         //Space Handling
         if (x == ' ')
         {
-            printf(" ");
+            printf (" ");
             continue;
         }
         //Unknown Character Handling
