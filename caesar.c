@@ -22,7 +22,8 @@ caesar (int key, char message[])
         //Space Handling
         if (x == ' ')
         {
-            y = ' ';
+            printf(" ");
+            continue;
         }
         //Unknown Character Handling
         if (x < 'a' || x > 'z')
@@ -31,11 +32,11 @@ caesar (int key, char message[])
         }
         //
 
-        if ((x - 'a' < (26 - key)) && (x != ' '))
+        if (x - 'a' < (26 - key))
         {
             y = x + key;
         }
-        if ((x - 'a' >= (26 - key)) && (x != ' '))
+        if (x - 'a' >= (26 - key))
         {
             y = x - (26 - key);
         }
